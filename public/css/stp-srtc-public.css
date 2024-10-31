@@ -1,0 +1,135 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.stp-container {
+  width: 100%;
+  margin: auto;
+}
+
+.stp-checklist-cont {
+  box-shadow: 0 8px 6px -6px rgb(53, 49, 49);
+  -moz-box-shadow: 0 8px 6px -6px rgb(53, 49, 49);
+  -webkit-box-shadow: 0 8px 6px -6px rgb(53, 49, 49);
+  border: 1px solid #ccc;
+}
+
+.stp-row {
+  display: flex;
+}
+
+.stp-error {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background: rgb(219, 150, 150);
+}
+
+.stp-dates {
+  display: block;
+  padding:10px;
+  text-align:right;
+}
+
+
+
+.stp-date {
+  flex: 1;
+  text-align: center;
+  display:inline-block;
+  margin-left:10px;
+  margin-right:10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.stp-date input {
+  display: none;
+}
+
+.stp-date input:checked + label {
+  background: #e46e6e;
+  border:1px solid #e46e6e;
+}
+
+.stp-date label {
+  padding: 15px 10px;
+  background: #ccc;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 0;
+  width:100%;
+}
+
+.stp-date label:hover {
+  background: #e46e6e;
+}
+
+.stp-date small {
+  font-size: 10px;
+}
+
+.stp-checklist-content {
+  padding: 10px;
+}
+
+.stp-item-container input[type="checkbox"] {
+  display: none;
+}
+
+.stp-item-container label:before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+  margin-right: 10px;
+  position: absolute;
+  left: 0px;
+  top: 9px;
+}
+
+.stp-item-container label{
+  font-size: 20px;
+  padding-left: 20px;
+    position: relative;
+}
+
+.stp-item-container input:checked + label {
+  text-decoration: line-through;
+}
+
+.stp-item-container input:checked + label:before {
+  content: "\2713";
+  color: #fff;
+  background: #000;
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.alert {
+  display: block;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.alert .stp-close {
+  float: right;
+  padding: 0;
+  background: transparent;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .stp-container {
+    width: 100%;
+  }
+}

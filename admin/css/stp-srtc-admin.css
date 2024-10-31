@@ -1,0 +1,54 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#employee_list td {
+  vertical-align: middle !important;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+
+.pi-header{
+  display:flex;
+  background: #1a4562!important;
+  margin-bottom:1rem;
+  margin-top:1rem;
+  
+}
+
+.pi-logo{
+  flex-basis:148px;
+  padding:5px;
+  padding-right:10px;
+}
+
+.pi-logo img{
+  max-width:100%;
+}
+
+.pi-tabs-cont{
+  display:flex;
+}
+
+.pi-tab-button{
+  margin-left:0;
+  background-color: #00a69f!important;
+  color:#fff;
+  font-size: 13px;
+  font-weight:normal;
+  padding:16px;
+  display:flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.pi-tab-button:hover{
+  background-color: #00736e!important;
+  color:#fff;
+}
+
+.pi-tab-button.active{
+  background-color: #ee6443!important;
+}
